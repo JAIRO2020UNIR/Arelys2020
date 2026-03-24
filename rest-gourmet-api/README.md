@@ -8,6 +8,7 @@ Esta API proporciona los servicios necesarios para el sistema de gestión de un 
 - **CORS**: Middleware para permitir peticiones desde el frontend.
 - **Dotenv**: Gestión de variables de entorno.
 - **Persistence**: Almacenamiento basado en archivos JSON para demostración.
+- **Git: https://github.com/JAIRO2020UNIR/Arelys2020/tree/main/rest-gourmet-api.
 
 ## Instalación y Ejecución
 
