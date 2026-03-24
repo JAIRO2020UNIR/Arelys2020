@@ -1,0 +1,38 @@
+=========================================
+      REST GOURMET API - ENDPOINTS
+=========================================
+Base URL: http://localhost:5000/api
+
+--- 1. MÓDULO DE USUARIOS ---
+POST   /users/login        -> Login (email, password)
+GET    /users              -> Listar usuarios
+POST   /users              -> Registrar empleado
+
+--- 2. MÓDULO DE MENÚ ---
+GET    /menu               -> Ver carta completa
+POST   /menu               -> Agregar plato (name, price, category)
+PUT    /menu/:id           -> Editar plato
+DELETE /menu/:id           -> Borrar plato
+
+--- 3. MÓDULO DE PEDIDOS ---
+GET    /orders             -> Ver pedidos activos
+POST   /orders             -> Crear pedido (table, items, total, notes)
+PATCH  /orders/:id/status  -> Cambiar estado (status: "Entregado")
+
+--- 4. MÓDULO DE RESERVAS ---
+GET    /reservations       -> Ver todas las reservas
+POST   /reservations       -> Crear reserva (client, date, time, pax)
+PATCH  /reservations/:id/confirm -> Confirmar reserva
+
+--- 5. MÓDULO DE INVENTARIO ---
+GET    /inventory          -> Ver stock de insumos
+POST   /inventory          -> Agregar insumo (name, quantity, unit)
+PATCH  /inventory/:id/stock -> Actualizar cantidad (quantity)
+
+--- 6. MÓDULO DE FACTURACIÓN ---
+GET    /invoices           -> Historial de facturas
+POST   /invoices           -> Cobrar pedido (orderId, method, clientName)
+
+=========================================
+Diseñado y desarrollado por: Arelys Ricardo Gomez
+=========================================

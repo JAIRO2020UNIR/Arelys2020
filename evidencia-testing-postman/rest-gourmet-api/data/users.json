@@ -1,0 +1,4 @@
+[
+  { "id": 1, "name": "Administrador Principal", "email": "admin@restgourmet.com", "password": "admin123", "role": "Administrador", "status": "Activo" },
+  { "id": 2, "name": "Juan Mesero", "email": "juan@restgourmet.com", "password": "123", "role": "Mesero", "status": "Activo" }
+]

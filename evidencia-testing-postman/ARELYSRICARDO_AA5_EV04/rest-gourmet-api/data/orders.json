@@ -1,0 +1,23 @@
+[
+  {
+    "id": 101,
+    "table": "Mesa 4",
+    "items": [
+      "Salmón en Salsa de Eneldo"
+    ],
+    "total": 32500,
+    "status": "En Cocina",
+    "notes": "Sin sal"
+  },
+  {
+    "id": 1774325828982,
+    "status": "En Cocina",
+    "table": "Mesa 5",
+    "items": [
+      "Risotto de Hongos",
+      "Vino Tinto"
+    ],
+    "total": 52000,
+    "notes": "Vino bien frío"
+  }
+]

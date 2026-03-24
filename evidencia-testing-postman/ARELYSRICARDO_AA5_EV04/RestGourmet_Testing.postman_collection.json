@@ -1,0 +1,128 @@
+{
+	"info": {
+		"_postman_id": "7538f71c-798d-4e2b-a5d6-c9a81f33f81e",
+		"name": "RestGourmet_Testing",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Módulo Usuarios",
+			"item": [
+				{
+					"name": "Login Admin",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"admin@restgourmet.com\",\n    \"password\": \"admin123\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/users/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"users",
+								"login"
+							]
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Módulo Menú",
+			"item": [
+				{
+					"name": "Ver Carta",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/menu",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"menu"
+							]
+						}
+					}
+				},
+				{
+					"name": "Agregar Plato",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Pasta Alfredo\",\n    \"category\": \"Plato Fuerte\",\n    \"price\": 28500\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/menu",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"menu"
+							]
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Módulo Pedidos",
+			"item": [
+				{
+					"name": "Crear Pedido Mesa 5",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"table\": \"Mesa 5\",\n    \"items\": [\"Risotto de Hongos\", \"Vino Tinto\"],\n    \"total\": 52000,\n    \"notes\": \"Vino bien frío\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/orders",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"orders"
+							]
+						}
+					}
+				}
+			]
+		}
+	]
+}
