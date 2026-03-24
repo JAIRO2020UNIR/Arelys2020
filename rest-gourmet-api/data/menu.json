@@ -1,0 +1,5 @@
+[
+  { "id": 1, "name": "Salmón en Salsa de Eneldo", "category": "Plato Fuerte", "price": 32500 },
+  { "id": 2, "name": "Risotto de Hongos", "category": "Entrada / Fuerte", "price": 28900 },
+  { "id": 3, "name": "Filete Mignon", "category": "Corte Premium", "price": 45000 }
+]

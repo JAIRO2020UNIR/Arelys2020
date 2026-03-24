@@ -1,0 +1,58 @@
+Reporte Técnico: Proyecto REST GOURMET - Frontend React
+Este documento detalla la construcción y especificaciones técnicas de la migración del frontend de REST GOURMET a una Single Page Application (SPA) utilizando React JS.
+
+1. Especificaciones Técnicas
+Framework Principal: React JS (v18)
+Herramienta de Construcción: Vite (Ultra-fast build tool)
+Enrutamiento: React Router DOM v6
+Gestión de Estado: React Context API (AdminProvider)
+Estilos: Custom Vanilla CSS con enfoque en Diseño Gourmet (Dorado D4AF37 / Negro 1A1A1A)
+Iconografía: Lucide React / Emojis UI para alta compatibilidad.
+
+2. Arquitectura y Estándares de Codificación
+El proyecto sigue una estructura modular y escalable:
+- `/src/components`: Componentes reutilizables (Layouts, UI).
+- `/src/context`: Lógica de persistencia de datos global.
+- `/src/pages`: Vistas segmentadas en Públicas y Administrativas.
+
+Estándares aplicados:
+Comentarios JSDoc: Documentación interna de funciones y componentes.
+CamelCase: Nomenclatura consistente en estilos y variables.
+RBAC (Role-Based Access Control): Control de acceso dinámico por perfiles.
+
+
+3. Reporte de Módulos y Funcionalidades
+
+A. Portal Público (Landing Page)
+Menú Dinámico: Sincronizado en tiempo real con la base de datos del administrador.
+Reservas Web: Formulario funcional que captura datos del cliente (Nombre, Doc, Teléfono) y envía la solicitud al panel administrativo con estado "Pendiente".
+
+B. Sistema de Workflow por Roles
+Se implementó un flujo de trabajo operativo real:
+1. Administrador: Control total de todos los módulos y reportes financieros.
+2. Chef: Gestión de la carta, inventarios y cambio de estado de pedidos ("En Cocina" a "Listo").
+3. Mesero: Registro de comandas y entrega final a mesa ("Listo" a "Entregado").
+4. Cajero: Proceso de facturación final. Solo permite cobrar pedidos marcados como "Entregado".
+
+C. Módulos Administrativos
+Gestión de Menú: Creación y eliminación de platos con actualización inmediata en Pedidos.
+Facturación: Generación de facturas electrónicas con datos de clientes y cálculo automático de montos.
+Reportes: Dashboard financiero con ventas totales del día y ticket promedio.
+Usuarios: Creación y edición de cuentas con gestión de contraseñas para acceso al sistema.
+
+4. Evidencia de Versionamiento
+El proyecto se encuentra bajo control de versiones utilizando Git.
+Estado: Repositorio inicializado y persistido en el directorio local.
+Historial: El primer commit formal contiene la estructura base, comentarios técnicos y cumplimiento de estándares exigidos.
+Ubicación: Carpeta raíz `rest-gourmet-react/.git`.
+
+5. Instrucciones de Ejecución (Local)
+Para visualizar el proyecto en un entorno de desarrollo:
+1. Navegar a la carpeta: `cd rest-gourmet-react`
+2. Instalar dependencias: `npm install`
+3. Iniciar servidor: `npm run dev`
+4. Abrir en el navegador: `http://localhost:5173`
+
+Credenciales de Prueba:
+Admin: `admin@restgourmet.com` / `admin123`
+Mesero: `juan@restgourmet.com` / `123`
