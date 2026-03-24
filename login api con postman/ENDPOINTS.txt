@@ -1,0 +1,19 @@
+ENDPOINTS DE LA API
+
+Registro
+URL: http://localhost:3001/register
+Método: POST
+Body:
+{
+  "usuario": "string",
+  "password": "string"
+}
+
+Login
+URL: http://localhost:3001/login
+Método: POST
+Body:
+{
+  "usuario": "string",
+  "password": "string"
+}

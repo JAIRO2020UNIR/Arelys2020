@@ -1,0 +1,65 @@
+{
+	"info": {
+		"name": "API de Autenticación - Evidencia",
+		"description": "Colección para probar el registro e inicio de sesión del servicio web.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "1. Registrar Usuario",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"usuario\": \"senastudent\",\n    \"password\": \"sena1234\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3001/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"register"
+					]
+				},
+				"description": "Crea un nuevo usuario en el sistema."
+			}
+		},
+		{
+			"name": "2. Iniciar Sesión (Login)",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"usuario\": \"senastudent\",\n    \"password\": \"sena1234\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3001/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"login"
+					]
+				},
+				"description": "Valida las credenciales del usuario."
+			}
+		}
+	]
+}
